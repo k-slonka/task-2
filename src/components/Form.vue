@@ -87,7 +87,7 @@
           this.errors.description = 'Treść wiadomości jest wymagana.';
         }
 
-        if (Object.getPrototypeOf(this.errors) === Object.prototype) {
+        if (Object.keys(this.errors).length === 0) {
           this.sentForm();
         }
       },
